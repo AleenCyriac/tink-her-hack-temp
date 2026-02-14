@@ -79,8 +79,8 @@ Front page of our website
 https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s2.png
 AI chat bot for asking recipes 
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s3.jpeg
+users can add their own recipes by form
 
 #### Diagrams
 
