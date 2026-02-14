@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# RBook 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Asrterix
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Aleen Rose - Jyothi Engineering College
+- Member 2: Agnes Joseph - Jyothi Engineering College
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+RBooK is a dual-purpose web platform designed to modernize the cooking experience. It functions as both a social recipe repository where users can document and share their own culinary creations, and an AI-powered kitchen assistant. By leveraging the Gemini 1.5 Flash API, the platform provides users with an interactive "Sous-Chef" that can generate recipes on the fly, suggest substitutions, and provide nutritional guidance.
 
 ### The Problem statement
-[What problem are you solving?]
+Standard recipe websites are static. If a user wants to substitute an ingredient (e.g., "I don't have eggs, what can I use?") or adjust a recipe for a specific diet, they have to leave the site and search elsewhere. There is no centralized platform that combines community-driven content (user-added recipes) with real-time intelligent assistance.
 
 ### The Solution
-[How are you solving it?]
+Our platform turns the traditional recipe website into a personal kitchen assistant. By combining a community-driven collection with a smart chatbot, we allow users to share their own recipes and get instant, tailored cooking help. Instead of scrolling through endless search results, you can simply chat with the site to find meals based on what is in your fridge or get quick ideas for dietary swaps. It simplifies meal planning and reduces food waste by turning a basic search into an easy, helpful conversation, making cooking simple for everyone.
 
 ---
 
@@ -31,25 +31,21 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Languages used: Python,Html,css
+- Frameworks used: Flask
+- Libraries used: Pandas,
+- Tools used: VS code,Figma,Git Hub
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: Community Recipe Hub – A dedicated space where users can upload, store, and share their own personal recipes, building a collective digital cookbook for everyone to enjoy.
+
+- Feature 2: AI Sous-Chef Chatbot – An intelligent assistant that provides instant cooking advice, answers culinary questions, and offers helpful tips just like a professional chef.
+  
+- Feature 4: Interactive Substitutions & Scaling – A flexible system that lets users instantly find ingredient alternatives or adjust serving sizes to fit their specific dietary needs or guest list.
 
 ---
 
@@ -59,21 +55,16 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+pip install -r requirements.txt
+pip install google-generativeai python-dotenv flask
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+python app.py
 ```
 
-### For Hardware:
 
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
 
 ---
 
@@ -101,7 +92,8 @@ List the key features of your project:
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
+![Workflow](docs/workflow.png)![Uploading image.png…]()
+
 *Add caption explaining your workflow*
 
 ---
