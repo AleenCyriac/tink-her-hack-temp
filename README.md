@@ -87,12 +87,13 @@ python app.py
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
+architure flow.png
+
 *Explain your system architecture - components, data flow, tech stack interaction*
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)![Uploading image.png…]()
+
 
 *Add caption explaining your workflow*
 
