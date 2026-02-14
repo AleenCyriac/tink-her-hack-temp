@@ -88,40 +88,31 @@ python app.py
 **System Architecture:**
 ![Architecture Flow](https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/architure%20flow.png)
 
-*Explain your system architecture - components, data flow, tech stack interaction*
+1.The Core Components (The Team)
+The Frontend (The Waiter): This is your HTML. It’s the face of the website. It takes your order (ingredients) and shows you the final dish (the recipe).
 
-**Application Workflow:**
+The Backend (The Kitchen Manager): This is Flask (Python). It sits in the middle. It doesn't cook the food itself, but it takes the order from the waiter and sends it to the right place.
 
+The AI Engine (The Master Chef): This is Gemini. It’s the "brain" that knows every recipe in the world. It takes the random ingredients you gave it and turns them into a professional cooking plan.
 
+The Database (The Pantry): This is where you store recipes that users have created. If you want to see a friend's recipe instead of an AI one, the Kitchen Manager looks here.
 
-*Add caption explaining your workflow*
+2. Tech Stack Interaction (How they talk)
+Even though these are different tools, they work as one team:
 
----
+HTML sends a message to Python saying, "Hey, the user has chicken and rice."
 
-### For Hardware:
+Python looks at its secret Environment File (.env) to get the key to talk to the AI.
 
-#### Schematic & Circuit
+Gemini AI receives the message, "thinks" for a second, and sends back a perfectly written recipe.
 
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+Python catches that recipe and hands it back to the HTML to display on your screen.
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-#### Build Photos
-
-![Team](Add photo of your team here)
-
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+3. Application Workflow (The Step-by-Step)
+Caption: The workflow starts when a user types in their ingredients. The system passes this information to the AI "Chef," which instantly creates a custom recipe and sends it back to the user’s screen in an easy-to-read format.
 
 ---
+
 
 ## Additional Documentation
 
