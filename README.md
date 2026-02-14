@@ -73,9 +73,8 @@ python app.py
 ### For Software:
 
 #### Screenshots (Add at least 3)
-
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s1.jpeg
+Front page of our website
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
