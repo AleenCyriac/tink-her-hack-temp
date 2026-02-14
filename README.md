@@ -86,8 +86,7 @@ python app.py
 #### Diagrams
 
 **System Architecture:**
-
-architure flow.png
+![Architecture Flow](architecture_flow.png)
 
 *Explain your system architecture - components, data flow, tech stack interaction*
 
