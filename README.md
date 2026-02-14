@@ -86,7 +86,7 @@ python app.py
 #### Diagrams
 
 **System Architecture:**
-![Architecture Flow](architecture_flow.png)
+![Architecture Flow](https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/architure%20flow.png)
 
 *Explain your system architecture - components, data flow, tech stack interaction*
 
