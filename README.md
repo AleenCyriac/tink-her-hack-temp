@@ -167,7 +167,7 @@ Caption: The workflow starts when a user types in their ingredients. The system 
 ## Project Demo
 
 ### Video
-https://drive.google.com/file/d/1AFaNDytA9gCGtj26NwBNnJGJDdJNHaq2/view?usp=drive_link
+https://drive.google.com/file/d/1NNoQvSTgWoJeaNHVJDsYuXFIfGMM_5g8/view?usp=sharing
 
 
 
