@@ -352,7 +352,7 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+https://drive.google.com/file/d/1AFaNDytA9gCGtj26NwBNnJGJDdJNHaq2/view?usp=drive_link
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
