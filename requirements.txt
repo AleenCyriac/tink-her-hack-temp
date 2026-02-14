@@ -1,0 +1,37 @@
+# Core Web Server & Framework
+Flask==3.1.2
+gunicorn==25.1.0
+Werkzeug==3.1.5
+Jinja2==3.1.6
+itsdangerous==2.2.0
+click==8.3.1
+blinker==1.9.0
+
+# Data & Utilities
+pandas==3.0.0
+numpy==2.4.2
+requests==2.32.5
+urllib3==2.6.3
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+MarkupSafe==3.0.3
+
+# Networking & Async
+httpx==0.28.1
+httpcore==1.0.9
+h11==0.16.0
+anyio==4.12.1
+idna==3.11
+certifi==2026.1.4
+
+# Security & Validation
+argon2-cffi==25.1.0
+cryptography
+jsonschema==4.26.0
+attrs==25.4.0
+
+# Google API Conflict Resolution
+# We list these without strict versions so they can sync up automatically
+google-api-core[grpc]
+grpcio-status
+grpcio
