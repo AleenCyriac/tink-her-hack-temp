@@ -88,6 +88,7 @@ seraching recipes
 https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s6.jpeg
 showing recipes 
 
+https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s7.jpeg
 login/sign page
 
 #### Diagrams
