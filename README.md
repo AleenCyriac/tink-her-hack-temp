@@ -85,8 +85,10 @@ users can add their own recipes by form
 https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s5.jpeg
 seraching recipes 
 
+https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s6.jpeg
+showing recipes 
 
-Added recipes 
+login/sign page
 
 #### Diagrams
 
