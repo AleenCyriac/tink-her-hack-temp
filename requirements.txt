@@ -7,6 +7,10 @@ itsdangerous==2.2.0
 click==8.3.1
 blinker==1.9.0
 
+# AI and Environment
+google-generativeai
+python-dotenv
+
 # Data & Utilities
 pandas==3.0.0
 numpy==2.4.2
@@ -31,7 +35,6 @@ jsonschema==4.26.0
 attrs==25.4.0
 
 # Google API Conflict Resolution
-# We list these without strict versions so they can sync up automatically
 google-api-core[grpc]
 grpcio-status
 grpcio
