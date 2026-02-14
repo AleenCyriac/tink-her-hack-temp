@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Add Recipe</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='add_recipe.css') }}">
+</head>
+<body>
+
+<h2>Add New Recipe</h2>
+
+<form action="/add" method="post" enctype="multipart/form-data">
+
+    <input type="text" name="title" placeholder="Recipe Title" required><br><br>
+
+    <textarea name="description" placeholder="Description"></textarea><br><br>
+
+    <textarea name="ingredients" placeholder="Ingredients"></textarea><br><br>
+
+    <textarea name="directions" placeholder="Directions"></textarea><br><br>
+
+    <input type="number" name="number_of_steps" placeholder="Number of steps"><br><br>
+
+    <input type="text" name="cuisine" placeholder="Cuisine"><br><br>
+
+    <input type="text" name="tastes" placeholder="Tastes"><br><br>
+
+    <input type="text" name="cook_speed" placeholder="Cook Speed"><br><br>
+
+    <input type="text" name="est_cook_time" placeholder="Estimated Cook Time"><br><br>
+
+    <input type="text" name="difficulty" placeholder="Difficulty"><br><br>
+
+    <input type="text" name="dietary_profile" placeholder="Dietary Profile"><br><br>
+
+    <input type="number" name="healthnum" placeholder="Health Number"><br><br>
+
+    <input type="text" name="health_flags" placeholder="Health Flags"><br><br>
+
+    <input type="text" name="health_level" placeholder="Health Level"><br><br>
+
+    <input type="file" name="image"><br><br>
+
+    <button type="submit">Submit Recipe</button>
+
+</form>
+
+</body>
+</html>
+ 

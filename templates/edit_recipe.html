@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Recipe</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='edit_recipe.css') }}">
+</head>
+<body>
+
+<h2>Edit Recipe</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+    <input type="text" name="title" value="{{ recipe[2] }}" required><br><br>
+
+    <textarea name="description" placeholder="Description">{{ recipe[3] }}</textarea><br><br>
+
+    <textarea name="ingredients" placeholder="Ingredients">{{ recipe[4] }}</textarea><br><br>
+
+    <textarea name="directions" placeholder="Directions">{{ recipe[5] }}</textarea><br><br>
+
+    <input type="number" name="number_of_steps" placeholder="Number of steps" value="{{ recipe[6] }}"><br><br>
+
+    <input type="text" name="cuisine" placeholder="Cuisine" value="{{ recipe[7] }}"><br><br>
+
+    <input type="text" name="tastes" placeholder="Tastes" value="{{ recipe[8] }}"><br><br>
+
+    <input type="text" name="cook_speed" placeholder="Cook Speed" value="{{ recipe[9] }}"><br><br>
+
+    <input type="text" name="est_cook_time" placeholder="Estimated Cook Time" value="{{ recipe[10] }}"><br><br>
+
+    <input type="text" name="difficulty" placeholder="Difficulty" value="{{ recipe[11] }}"><br><br>
+
+    <input type="text" name="dietary_profile" placeholder="Dietary Profile" value="{{ recipe[12] }}"><br><br>
+
+    <input type="number" name="healthnum" placeholder="Health Number" value="{{ recipe[13] }}"><br><br>
+
+    <input type="text" name="health_flags" placeholder="Health Flags" value="{{ recipe[14] }}"><br><br>
+
+    <input type="text" name="health_level" placeholder="Health Level" value="{{ recipe[15] }}"><br><br>
+
+    <input type="file" name="image"><br><br>
+
+    <button type="submit">Update Recipe</button>
+
+</form>
+
+
+</body>
+</html>

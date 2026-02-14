@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>All Recipes</h1>
+    </div>
+
+    <div>
+        <!-- Search Form -->
+        <form method="GET" action="/my-recipes">
+    <input type="text" name="search" placeholder="Search my recipes">
+    <button type="submit">Search</button>
+</form>
+
+    </div>
+
+    <div>
+        <!-- Add New Recipe Button -->
+        <form action="/add" method="get">
+            <button type="submit">Add New Recipe</button>
+        </form>
+    </div>
+
+    <hr>
+</header>
+
+<!-- Recipes Section -->
+<main>
+
+{% for recipe in recipes %}
+    <div>
+        <h2>{{ recipe[2] }}</h2>
+
+        
+        
+         <p><strong>description:</strong>{{ recipe[3] }}</p>
+
+         <p><strong>Ingredients:</strong>
+         {{ recipe[4] }}</p>
+
+         <p><strong>directions:</strong>{{ recipe[5] }}</p>
+
+         <p><strong> number_of_steps:</strong>{{ recipe[6] }}</p>
+
+        <p><strong> cuisine:</strong>{{ recipe[7] }}</p>
+
+        <p><strong>tastes:</strong>{{ recipe[8] }}</p>
+
+         <p><strong>cook_speed:</strong>{{ recipe[9] }}</p>
+
+         <p><strong>est_cook_time:</strong>{{ recipe[10] }}</p>
+
+         <p><strong>difficulty:</strong>{{ recipe[11] }}</p>
+
+         <p><strong>dietary_profile:</strong>{{ recipe[12] }}</p>
+
+         <p><strong>healthnum:</strong>{{ recipe[13] }}</p>
+
+         <p><strong>health_flags:</strong>{{ recipe[14] }}</p>
+
+         <p><strong>health_level:</strong>{{ recipe[15] }}</p>
+
+
+
+
+
+
+
+        {% if recipe[16] %}
+            <img src="/uploads/{{ recipe[16] }}" width="200">
+        {% endif %}
+
+        <br><br>
+
+        <!-- Edit Button -->
+        <form action="/edit/{{ recipe[0] }}" method="get" style="display:inline;">
+            <button type="submit">Edit</button>
+        </form>
+
+        <!-- Delete Button -->
+        <form action="/delete/{{ recipe[0] }}" method="post" style="display:inline;">
+            <button type="submit">Delete</button>
+        </form>
+
+        <hr>
+    </div>
+{% endfor %}
+
+</main>
+
+</body>
+</html>

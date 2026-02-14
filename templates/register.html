@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .card {
+            background: #2a2a2a;
+            padding: 40px;
+            border-radius: 12px;
+            width: 400px;
+            border: 1px solid #444;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #555;
+            background: #3a3a3a;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: #2e7d32;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #2196f3;
+            text-decoration: none;
+        }
+
+        .link {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Sign Up</h2>
+
+    <form method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="full_name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="link">
+        Already have an account? <a href="/login">Login</a>
+    </div>
+</div>
+
+</body>
+</html>

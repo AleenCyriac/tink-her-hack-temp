@@ -1,0 +1,121 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background: #f3f3f3;
+    padding: 60px 0;
+}
+
+/* ================= FORM CARD ================= */
+
+form {
+    width: 520px;
+    margin: auto;
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border: 2px solid #222;
+    position: relative;
+}
+
+/* Decorative top & bottom */
+form::before,
+form::after {
+    content: "❦ ❦ ❦";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: #222;
+}
+
+form::before {
+    top: 12px;
+}
+
+form::after {
+    bottom: 12px;
+}
+
+/* ================= HEADINGS ================= */
+
+form h1,
+form h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* ================= LABELS ================= */
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+
+/* ================= INPUTS ================= */
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #555;
+    padding: 6px 4px;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+}
+
+textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+/* ================= TWO COLUMN SECTIONS ================= */
+
+.ingredients,
+.directions {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ingredients {
+    margin-right: 4%;
+}
+
+/* ================= NOTES ================= */
+
+.notes textarea {
+    min-height: 100px;
+}
+
+/* ================= BUTTON ================= */
+
+button {
+    display: block;
+    margin: 30px auto 0;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 26px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #000;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}

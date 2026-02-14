@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Recipes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>RBooK</h2>
+        <div>
+            <a href="{{ url_for('home') }}">Home</a>
+           <a href="{{ url_for('ask_ai') }}"> Ask AI </a>
+
+            <a href="{{ url_for('logout') }}">Logout</a>
+            <a href="{{ url_for('my_recipes') }}">My Recipes</a>
+        </div>
+    </nav>
+
+    <!-- SEARCH BAR -->
+    <form method="GET" action="/" class="search-bar">
+        <input
+            type="text"
+            name="search"
+            placeholder="Search recipes..."
+            value="{{ search }}"
+            required
+        >
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- SEARCH RESULTS -->
+    {% if search %}
+        {% if recipes %}
+            <section class="recipe-container">
+                {% for recipe in recipes %}
+                    <div class="recipe-card">
+                        <h3>{{ recipe["title"] }}</h3>
+                        <p>{{ recipe["cuisine"] }} · {{ recipe["difficulty"] }}</p>
+                        <a href="/recipe/{{ recipe['id'] }}">View Recipe</a>
+                    </div>
+                {% endfor %}
+            </section>
+
+            <!-- PAGINATION -->
+            <div class="pagination" style="text-align:center; margin:30px 0;">
+                {% if page > 1 %}
+                    <a href="/?search={{ search }}&page={{ page - 1 }}">
+                        ⬅ Previous
+                    </a>
+                {% endif %}
+
+                {% if has_next %}
+                    <a href="/?search={{ search }}&page={{ page + 1 }}" style="margin-left:20px;">
+                        Next 10 Recipes ➡
+                    </a>
+                {% endif %}
+            </div>
+
+        {% else %}
+            <p style="text-align:center; margin-top:30px;">
+                No recipes found for "<strong>{{ search }}</strong>"
+            </p>
+        {% endif %}
+    {% endif %}
+
+    <!-- DEFAULT HOME CONTENT (ONLY WHEN NOT SEARCHING) -->
+    {% if not search %}
+        <section class="hero">
+            <h1>Welcome to Delicious Recipes 🍴</h1>
+            <p>Explore tasty dishes and save your own private recipes.</p>
+        </section>
+
+        <section class="recipe-container">
+
+            <div class="recipe-card">
+                <img src="{{ url_for('static', filename='images/grilled_chicken.jpeg') }}">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy grilled chicken with herbs and spices.</p>
+            </div>
+
+            <div class="recipe-card">
+                <img src="{{ url_for('static', filename='images/creamy.jpeg') }}">
+                <h3>Creamy Pasta</h3>
+                <p>Rich and creamy pasta for dinner nights.</p>
+            </div>
+
+            <div class="recipe-card">
+                <img src="{{ url_for('static', filename='images/salad.jpeg') }}">
+                <h3>Fresh Salad</h3>
+                <p>Healthy and refreshing vegetable salad.</p>
+            </div>
+
+            <div class="recipe-card">
+                <img src="{{ url_for('static', filename='images/burger.jpeg') }}">
+                <h3>Classic Burger</h3>
+                <p>Homemade burger with crispy fries.</p>
+            </div>
+
+        </section>
+    {% endif %}
+
+</body>
+</html>

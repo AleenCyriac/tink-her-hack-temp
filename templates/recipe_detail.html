@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ recipe['title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recipe_detail.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>RBooK</h2>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/add" class="post-btn">Add New Recipe</a>
+    </div>
+</nav>
+
+<!-- HEADER CARD -->
+<section class="recipe-header">
+    <div class="header-content">
+        <h1>{{ recipe['title'] }}</h1>
+        <p class="description">{{ recipe['description'] }}</p>
+
+        <div class="meta">
+            <span>⏱ {{ recipe['est_cook_time'] }} min</span>
+            <span>🔥 {{ recipe['difficulty'] }}</span>
+            <span>💚 {{ recipe['health_level'] }}</span>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="recipe-body">
+
+    <!-- INGREDIENTS + DIRECTIONS -->
+    <div class="left-panel">
+        <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+                {% for item in recipe['ingredients'].split(',') %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="directions">
+            <h3>Directions</h3>
+            <p>{{ recipe['directions'] }}</p>
+        </div>
+    </div>
+
+    <!-- SIDE INFO -->
+    <div class="right-panel">
+        <div class="info-row">
+            <span>Tastes</span>
+            <span>{{ recipe['tastes'] }}</span>
+        </div>
+        <div class="info-row">
+            <span>Cuisine</span>
+            <span>{{ recipe['cuisine'] }}</span>
+        </div>
+        <div class="info-row">
+            <span>Dietary Profile</span>
+            <span>{{ recipe['dietary_profile'] }}</span>
+        </div>
+        <div class="info-row">
+            <span>Healthy Flag</span>
+            <span>{{ recipe['health_flags'] }}</span>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

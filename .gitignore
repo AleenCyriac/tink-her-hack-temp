@@ -1,0 +1,18 @@
+
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+
+# Database
+recipes.db
+
+# Large dataset
+recipes_dataset.csv
+
+# Uploaded images
+uploads/
