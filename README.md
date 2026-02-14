@@ -82,6 +82,9 @@ AI chat bot for asking recipes
 https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s3.jpeg
 users can add their own recipes by form
 
+https://github.com/AleenCyriac/tink-her-hack-temp/blob/main/s5.jpeg
+seraching recipes 
+
 
 Added recipes 
 
